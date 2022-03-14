@@ -16,6 +16,7 @@ export class AppComponent{
     this.tasksList.push(this.newTask!);
     this.newTask = '';
 
+
   }
 
   remove(task: string){
@@ -25,6 +26,5 @@ export class AppComponent{
   done(task: string){
     this.tasksDone.push(task);
     this.remove(task);
-
   }
 }
